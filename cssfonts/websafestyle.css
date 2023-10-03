@@ -1,0 +1,20 @@
+*{
+    background-color: #bbceae ;
+}
+.a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.b{
+    font-family: 'Courier New', Courier, monospace;
+}
+.c{
+    font-family: 'Times New Roman', Times, serif;
+}
+.a,.b,.c{
+    background-color: #a9cf8e;
+    box-shadow: 5px 5px black;
+    background-image: linear-gradient(#bbceae,#a9cf8e);
+    width: 200px;
+    height: 100px;
+    margin: 30px;
+}
