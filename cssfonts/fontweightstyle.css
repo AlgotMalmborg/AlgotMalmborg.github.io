@@ -1,4 +1,4 @@
-*{
+body{
     background-color: #F7A6AC;
 }
 .a{
@@ -11,7 +11,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .a,.b,.c{
-    
+    background-color: #F37C84;
     box-shadow: 5px 5px black;
     background-image: linear-gradient(#F7A6AC,#F37C84);
     width: 300px;
