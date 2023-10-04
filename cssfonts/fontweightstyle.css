@@ -11,10 +11,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 .a,.b,.c{
-    background-color: #F37C84;
+    
     box-shadow: 5px 5px black;
     background-image: linear-gradient(#F7A6AC,#F37C84);
-    width: 200px;
+    width: 300px;
     margin: 20px;
 }
 .lighter{
