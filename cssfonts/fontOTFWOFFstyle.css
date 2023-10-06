@@ -24,9 +24,10 @@ div{
 }
 
 .a{
-    font-family: myMayestica,sans-serif;
+    font-family:myRistretto,sans-serif;
 }
 
 .b{
-    font-family:myRistretto,sans-serif;
+    
+    font-family: myMayestica,sans-serif;
 }
