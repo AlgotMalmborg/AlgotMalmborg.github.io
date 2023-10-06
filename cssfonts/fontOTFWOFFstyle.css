@@ -1,9 +1,13 @@
 @font-face {
-    font-family:myRoboto;
-    src: url(Roboto-Regular.ttf);
-    font-family:myMickeys;
-    src: url(Mickeys\ Merry\ Christmas.ttf);
+    font-family:myRistretto;
+    src: url(ristretto.woff);
 }
+
+@font-face {
+    font-family:myMayestica;
+    src: url(Mayestica.otf);
+}
+
 
 body{
     background-color: #EBF7E3;
@@ -20,9 +24,9 @@ div{
 }
 
 .a{
-    font-family: myRoboto,sans-serif;
+    font-family: myMayestica,sans-serif;
 }
 
 .b{
-    font-family:myMickeys,sans-serif;
+    font-family:myRistretto,sans-serif;
 }
