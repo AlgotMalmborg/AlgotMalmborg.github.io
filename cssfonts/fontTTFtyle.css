@@ -2,18 +2,18 @@
     font-family:myRoboto;
     src: url(Roboto-Regular.ttf);       
     font-family:myMickey;
-    src: url(MickeyMerryChristmasotf.otf);
+    src: url(Mickey\ Merry\ Christmasotf.otf);
                           }
 
 body{
     background-color: #EBF7E3;
 }
 .a{
-font-family: myRoboto;
+font-family: myRoboto,sans-serif;
         
 }
 .b{
-font-family: myMickey;
+font-family: myMickey,sans-serif;
 }
 div{
     width: 250px;
