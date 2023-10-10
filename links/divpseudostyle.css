@@ -11,12 +11,12 @@ width: 100px;
 height: 50px;
 outline: none;
 text-decoration: none;
-
+margin: 10px;
 }
-.b:focus{
+div:focus{
     background-color: blue;
 }
-.c:hover{
+div:hover{
 color: blue;
 }
 h1{
