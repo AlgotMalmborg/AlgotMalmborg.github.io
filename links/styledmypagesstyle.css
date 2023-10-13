@@ -2,6 +2,7 @@ body{
     background-color: rgb(255, 197, 142);
     font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
+    text-align: center;
 }
 div{
     height: 300px;
@@ -16,6 +17,7 @@ a{
     border-radius: 8px;
     color: rgb(167, 108, 0);
     width: 120px;
+    border-width: 120px;
 }
 a:hover{
     background-color: black;
