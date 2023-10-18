@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(51, 255, 51);
+}
+.Max{
+border: 1px solid blue;
+}
+.Charles{
+border: 1px solid grey;
+}
+.Lewis{
+border: 1px yellow;
+}
+div{
+    box-shadow: 5px 5px black;
+    width: 600px;
+    float: left;
+    margin: 1px;
+    padding: 1px;
+}
+img{
+width: 200px;
+height: 200px;
+}
