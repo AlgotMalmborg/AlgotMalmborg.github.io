@@ -25,3 +25,12 @@ figcaption{
 background-color: rgb(51, 255, 51);
 text-align: center;
 }
+.a{
+    border: 2px solid red;
+}
+.b{
+    border: 2px solid green;
+}
+.c{
+    border: 2px solid blue;
+}
