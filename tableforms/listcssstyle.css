@@ -1,0 +1,25 @@
+body{
+    background-color: lightgreen;
+}
+.roman{
+    list-style: upper-roman;
+}
+.none{
+    list-style: none;
+}
+ul{
+    list-style: square;
+    border: 2px solid blue;
+}
+ol{
+    border: 2px solid blue;
+}
+.algotwashere{
+    background-color: white;
+    color: purple;
+    list-style-type: none;
+
+}
+.ut{
+    margin: 15px;
+}
