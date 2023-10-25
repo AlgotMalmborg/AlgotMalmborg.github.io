@@ -8,7 +8,6 @@ tfoot{
     color: blue;
 }
 table{
-    box-shadow: 5px 5px black;
     border: 2px solid blue;
     border-collapse: collapse;
     text-align: center;
@@ -16,4 +15,17 @@ table{
 td,th{
     border: 1px solid green;
     padding: 5px 10px;
+}
+.purple{
+    color: purple;
+}
+.gborder{
+    border: 1px solid lightgreen;
+}
+.boss{
+    box-shadow: 5px 5px black;
+
+}
+.yellow{
+    color: yellow;
 }
