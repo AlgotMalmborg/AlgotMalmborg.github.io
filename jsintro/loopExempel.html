@@ -1,15 +1,33 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script>
-    let text = "Hello world!";
-let result = text.substring(1, 4);
-</script>
 </head>
 <body>
-Hello world
+    <button onclick="testfor(20,'asada',5)">Testknapp</button>
+    <button onclick="testfor(10,'jag')">Testknapp</button>
+    <button onclick="testwhile()">Testknapp</button>
+    <script>
+        function testfor(toNumber,skriva, tillNummer){
+            for(var i=0;i <toNumber;i++ )
+            {
+	            document.writeln(skriva);
+            }
+        }
+        function testwhile()
+        {
+            i=0;
+            while (i<5)
+            {
+                document.writeln("hi olle");
+                i++;
+
+            }
+        }
+
+    </script>
 </body>
 </html>
