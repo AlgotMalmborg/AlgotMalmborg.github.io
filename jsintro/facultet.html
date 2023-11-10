@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+
         function factorial(x) {
 // om input argument är invalid , kasta en undantag!  
 if (x < 0)
@@ -38,7 +39,10 @@ catch (ex) { // om inmatning är inte valid då denna del exekveras
     </script>
 </head>
 <body>
-   
+    <form>
+		<label for="number">Enter number (number>0):</label>
+		<input type="number" id="number" onclick="question()">
+	</form>
     
 </body>
 </html>
