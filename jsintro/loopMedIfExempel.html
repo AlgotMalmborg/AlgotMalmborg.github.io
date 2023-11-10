@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+		function question()
+		{
+            var x = 0;
+            var i = 1;
+            var num = parseInt(document.getElementById("num").value);
+			
+            if (num > 0) 
+			{
+                while(i < num+1)
+				{
+                    x = i + x;
+                    i++;
+                }
+                document.write("<br><br>" + x)
+            }
+            else 
+			{
+                document.write("<br>Error: Remember number>0");    
+            }
+        }
+	</script>
 </head>
 <body>
     
-    Enter number (number>0):<input type="number" id="number" value="i">
-    <script>
-    document.getElementById("number")
-    if(number>0);
-     {
-        alert("hellu");
-    }
-    </script>
+    <form>
+		<label for="number">Enter number (number>0):</label>
+		<input type="number" id="number" onclick="question()">
+	</form>
 </body>
 </html>
