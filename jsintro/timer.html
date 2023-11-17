@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer Example</title>
+    <style>
+        #movingBox {
+            position: absolute;
+            top: 10px;
+            left: 400px;
+            width: 150px;
+            height: 150px;
+            background-color: #ffd700; /* Gul färg */
+            box-shadow: 2px 2px 5px #888888; /* Liten box-shadow */
+        }
+    </style>
+</head>
+<body>
+
+<div id="movingBox"></div>
+
+<button onclick="startInterval()">setInterval</button>
+<button onclick="stopInterval()">clearInterval</button>
+<br>
+<button onclick="startTimeout()">setTimeout</button>
+<button onclick="stopTimeout()">clearTimeout</button>
+
+<script>
+    let xPosition = 10;
+    let intervalTimer;
+    let timeoutTimer;
+
+    function moveBox() {
+        const movingBox = document.getElementById('movingBox');
+        xPosition += 15;
+        movingBox.style.left = xPosition + 'px';
+    }
+
+    function startInterval() {
+        stopInterval(); // För att undvika att flera intervall körs samtidigt
+        intervalTimer = setInterval(moveBox, 500);
+    }
+
+    function stopInterval() {
+        clearInterval(intervalTimer);
+    }
+
+    function startTimeout() {
+        stopTimeout(); // För att undvika att flera timeouts körs samtidigt
+        timeoutTimer = setTimeout(moveBox, 500);
+    }
+
+    function stopTimeout() {
+        clearTimeout(timeoutTimer);
+    }
+</script>
+
+</body>
+</html>
