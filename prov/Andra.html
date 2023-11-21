@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkylator</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        input {
+            width: 80px;
+            margin: 5px;
+        }
+        button {
+            background-color: cyan;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <label for="number1">Tal 1:</label>
+        <input type="number" id="num1" placeholder=""><br>
+        <label for="number2">Tal 2:</label>
+        <input type="number" id="num2" placeholder="">
+    </div>
+
+    <div>
+        <button onclick="calculate('Plus')">+</button>
+        <button onclick="calculate('Minus')">-</button>
+        <button onclick="calculate('Multiplicera')">*</button>
+        <button onclick="calculate('dela')">/</button>
+    </div>
+
+    <script>
+        function calculate(operation) {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var result;
+
+            switch (operation) {
+                case 'Plus':
+                    result = add(num1, num2);
+                    break;
+                case 'Minus':
+                    result = subtract(num1, num2);
+                    break;
+                case 'Multiplicera':
+                    result = multiply(num1, num2);
+                   break;
+                case 'dela':
+                    result = divide(num1, num2);
+                    break;
+                default:
+                    alert("NaN");
+                    return;
+            }
+
+            alert("Result: " + result);
+        }
+
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function subtract(num1, num2) {
+            return num1 - num2;
+        }
+
+        function multiply(num1, num2) {
+            return num1 * num2;
+        }
+
+        function divide(num1, num2) {
+            if (num2 !== 0) {
+                return num1 / num2;
+            } else {
+                alert("Kan inte dela med 0");
+                return undefined; 
+            }
+        }
+    </script>
+
+</body>
+</html>
