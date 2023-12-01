@@ -5,22 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<style>
+    body{
+        background-color: rgb(165, 112, 42);
+    }
+#main{
+    display: flex;
+    flex-direction: column;
+}
+ul{
+    flex-direction: row;
+    list-style: none;
+}
+.second{
+background: no-repeat url(croissants.jpg);
+background-size: 100vh 9em;
+}
+li{
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+</style>
+
 </head>
 <body>
-    <div>
-    <div>
+    <div id="main">
+    <div class="head">
         <ul>
-            <li>MENU</li>
-            <li>NEWS</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
+            <li>MENU<ion-icon name="menu-outline" style="color: white;"></ion-icon></li>
+            <li>NEWS <ion-icon name="newspaper-outline" style="color: blue;"></ion-icon></li>
+            <li>ABOUT<ion-icon name="receipt-outline" style="color: greenyellow;"></ion-icon></li>
+            <li>CONTACT<ion-icon name="person-outline" style="color: white;"></ion-icon></li>
         </ul>
         <img src="logo.png" alt="logo">
     </div>
-    <div>
+    <div class="second">
         <h2>Haris Bakery</h2>
-        <img src="croissants.jpg" alt="croissants">
     </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
