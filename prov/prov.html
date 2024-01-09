@@ -24,13 +24,14 @@ body{
     justify-content: space-between; 
     text-align: center;
     padding: 10px;
+    
 }
-.r{
+.HOME{
     flex: 1; 
     margin-right: 5%;
 }
 
-.e{
+.ABOUT{
     flex: 3;
     margin-left: 5%;
 }
@@ -128,7 +129,7 @@ fieldset > input{
     align-self: center;
 }
 
-@media screen and (max-width: 1100px) and (min-width: 750px) {
+@media screen and (max-width: 1200px) and (min-width: 650px) {
     .forms{
         display: none;
     }
@@ -138,13 +139,13 @@ fieldset > input{
     ul{
         flex-direction: column;
     }
-    .e, .r{
+    .ABOUT, .HOME{
         margin: 0;
     }
-    .e{
+    .ABOUT{
         margin-bottom: -10px;
     }
-    .r{
+    .HOME{
         margin-bottom: -32px;
     }
     li{
@@ -158,51 +159,54 @@ fieldset > input{
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 650px) {
     .body, .forms{
         display: none;
     }
-    .e{
+    .ABOUT{
         order: 1;
+        flex-direction: column;
     }
-    .r{
+    .HOME{
         order: 2;
         margin: -10px;
+        margin-bottom: -30px;
+        flex-direction: row;
+ 
     }
     .header{
-        flex-direction: column;   
+        flex-direction: row;   
     }
     ul{
         flex-direction: column;
     }
-    .e, .r{
+    .ABOUT, .HOME{
         margin: 0;
-    }
-    .e{
         margin-bottom: -10px;
     }
-    .r{
-        margin-bottom: -30px;
-    }
+ 
     li{
         flex: 100%;
     }
     .footer{
         flex-wrap: wrap;
+        flex:  1 100%;
+        flex-direction: column;
     }
+
 }
     </style>
 </head>
 <body>
     <div class="all">
         <div class="header">
-            <div class="r">
+            <div class="HOME">
                 <ul>
                     <li><a>HOME</a></li>
                     <li><a>NEWS</a></li>
                 </ul>
             </div>
-            <div class="e">
+            <div class="ABOUT">
                 <ul>
                     <li><a>ABOUT</a></li>
                     <li><a>SERVICES</a></li>
@@ -255,10 +259,10 @@ fieldset > input{
                     <legend>Nationality</legend>
                     <label for="Nationality">Choose a Nationality:</label>
                     <select name="Nationality">
-                        <option value="Ned">Ned</option>
-                        <option value="Swe">Swe</option>
-                        <option value="Fin">Fin</option>
-                        <option value="Den">Den</option>
+                        <option value="USA">NED</option>
+                        <option value="Swe">USA</option>
+                        <option value="GBR">GBR</option>
+                        <option value="SWE">SWE</option>
                     </select>
                 </fieldset>
                 </form>
