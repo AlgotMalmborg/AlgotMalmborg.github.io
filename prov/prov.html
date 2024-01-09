@@ -11,7 +11,7 @@
     font-family: 'Times New Roman', Times, serif;
 }
 body{
-    background-color: rgb(34, 86, 153);
+    background-color: rgb(34, 255, 153);
 }
 .all{
     display: flex;
@@ -44,14 +44,14 @@ ul {
 
 li {
     background-color: rgb(221, 221, 221);
-    box-shadow: 4px 4px rgb(7, 221, 114);
+    box-shadow: 0.6em 0.6em rgb(212, 50, 114);
     margin: 10px;
     padding: 15px;
     flex: 1; 
 }
 
 .body{
-    box-shadow: 4px 4px rgb(7, 177, 31);
+    box-shadow: 0.6em 0.6em rgb(0, 37, 189);
     background-color: rgb(221, 221, 221);
     display: flex;
     flex-direction: row;
@@ -81,7 +81,7 @@ button{
 }
 .footer > div{
     background-color: rgb(221, 221, 221);
-    box-shadow: 3px 3px red;
+    box-shadow: 0.3em 0.3em rgb(211, 39, 18);
     padding: 15px;
     margin: 5px;
     flex: 1 20%;
@@ -199,6 +199,7 @@ fieldset > input{
             <div class="r">
                 <ul>
                     <li><a>HOME</a></li>
+                    <li><a>NEWS</a></li>
                 </ul>
             </div>
             <div class="e">
@@ -242,29 +243,41 @@ fieldset > input{
         <div class="forms">
             <form>
                 <fieldset>
-                    <legend>Gender*</legend>
-                    <label for="male">Male
-                        <input type="radio" name="gender"><br>
-                    </label>
-                    <label for="female">Female
-                        <input type="radio" name="gender">
-                    </label>
+                  <legend>Your name</legend>
+                  <label class="blue" for="First name">First name*
+                    <input type="text" name="First name" required>
+                </label><br>
+                <label class="blue" for="Last name">Last name*
+                    <input type="text" name="Last name" required>
+                </label>
                 </fieldset>
-            </form>
-            <form class="forms test">
                 <fieldset>
-                    <legend>Programming Skill</legend>
-                    <label>Java
-                        <input type="checkbox" value="Java"><br>
+                    <legend>Nationality</legend>
+                    <label for="Nationality">Choose a Nationality:</label>
+                    <select name="Nationality">
+                        <option value="Ned">Ned</option>
+                        <option value="Swe">Swe</option>
+                        <option value="Fin">Fin</option>
+                        <option value="Den">Den</option>
+                    </select>
+                </fieldset>
+                </form>
+                <form>
+                <fieldset>
+                    <legend>Skills</legend>
+                    <label>Electritian
+                        <input type="checkbox" value="Electritian"><br>
                     </label>
-                    <label>C++
-                        <input type="checkbox" value="C++"><br>
+                    <label>Baker
+                        <input type="checkbox" value="Baker"><br>
                     </label>
-                    <label>C#
-                        <input type="checkbox" value="C#">
+                    <label>Carpenter
+                        <input type="checkbox" value="Carpenter">
                     </label>
                 </fieldset>
-                <input type="submit" class="send" value="Send">
+              
+                
+                <input type="submit" value="Send">
             </form>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
